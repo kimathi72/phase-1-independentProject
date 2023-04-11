@@ -38,7 +38,7 @@ function updateCurrentLocation(data){
 }
 function updateWeatherStatus(data){
     document.querySelector("#weather-status").innerHTML = `<span style=\"color:darkcyan\">${data.text}</span>`;
-    document.querySelector(".weather-icon").src = data.icon;
+    document.querySelector("#weather-icon").src = data.icon;
 
 }
 function updateTemperatureDetails(data){

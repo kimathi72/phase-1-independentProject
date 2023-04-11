@@ -3,9 +3,6 @@ body{
     padding: auto;
     background-color: rgb(250, 247, 241);
 }
-.card{
-    margin:auto;
-}
 .form-inline{
     display: flex;
     flex-direction: row;
@@ -43,10 +40,14 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 1px solid olivedrab;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 25px;
     color: brown;
 
+}
+#weather-icon{
+    height:300px;
+    width: 400px;
+    align-self: center;
 }
