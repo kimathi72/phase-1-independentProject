@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const long = position.coords.longitude;
             document.querySelector(".geo").innerHTML = "<h6>Latitude: <span style=\"color: cyan;\" >" + lat + "</span> </h6><h6> " + "Longitude: " + long + ".</h6>";
             
-            return fetchCurrentWeather("http://api.weatherapi.com/v1/current.json?key=2d66208f6e624794bbc92139221612&q=" + lat +"," + long + "&aqi=no"); 
+             fetchCurrentWeather("http://api.weatherapi.com/v1/current.json?key=2d66208f6e624794bbc92139221612&q=" + lat +"," + long + "&aqi=no"); 
         })
     }
     document.querySelector("form").addEventListener("submit", (e)=>{
         e.preventDefault();
         const cityName = document.querySelector("#citySearch").value;
         
-        return fetchCurrentWeather("http://api.weatherapi.com/v1/current.json?key=2d66208f6e624794bbc92139221612&q=" + cityName + "&aqi=no");
+         fetchCurrentWeather("http://api.weatherapi.com/v1/current.json?key=2d66208f6e624794bbc92139221612&q=" + cityName + "&aqi=no");
     })
 })
 function renderCurrentWeather(data) {
