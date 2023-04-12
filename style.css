@@ -12,7 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: darkcyan;
+    
 }
 #cityDetails{
     display:flex;

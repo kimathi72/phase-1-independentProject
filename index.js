@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const lat = position.coords.latitude;
             const long = position.coords.longitude;
             document.querySelector(".geo").innerHTML = "<h6>Latitude: <span style=\"color: cyan;\" >" + lat + "</span> </h6><h6> " + "Longitude: " + long + ".</h6>";
-
+            const fetchCurrentWeather = async (url) => {
+                const response = await fetch(url);
+                currentWeather = await response.json();
+                return renderCurrentWeather(currentWeather);
+            }
             return fetchCurrentWeather("http://api.weatherapi.com/v1/current.json?key=2d66208f6e624794bbc92139221612&q=" + lat +"," + long + "&aqi=no"); 
         })
     }
@@ -17,11 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-const fetchCurrentWeather = async (url) => {
-    const response = await fetch(url);
-    currentWeather = await response.json();
-    return renderCurrentWeather(currentWeather);
-}
+
 
 function renderCurrentWeather(data) {
     console.log(data);
