@@ -1,8 +1,9 @@
 body{
     margin: auto;
     padding: auto;
-    background-color: rgb(250, 247, 241);
+    
 }
+
 .form-inline{
     display: flex;
     flex-direction: row;
@@ -50,4 +51,13 @@ body{
     height:300px;
     width: 400px;
     align-self: center;
+}
+#recommendations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(43, 134, 96);
+    font-size: larger;  
+    font-family: 'Franklin Gothic Medium'; 
+    
 }
