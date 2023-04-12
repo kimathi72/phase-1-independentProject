@@ -1,6 +1,7 @@
 body{
     margin: auto;
     padding: auto;
+    background-color: lightblue;
     
 }
 
@@ -8,6 +9,17 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin:10px;
+    padding: 10px;
+    background-color: rgb(171, 196, 196);
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+}
+.bg-white{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
 }
 #location{
     display: flex;
@@ -24,7 +36,7 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    color: rgb(11, 85, 67);
+    color: orange;
     
 }
 #currentWeatherDetails{
@@ -44,7 +56,8 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 25px;
-    color: brown;
+    color: darkcyan;
+    font-weight: bold;
 
 }
 #weather-icon{
@@ -55,8 +68,11 @@ body{
 #recommendations{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    color: rgb(43, 134, 96);
+    justify-content:center;
+    padding: 5px;
+    border-radius: 10px;
+    color: lemonchiffon;
+    background-color: darkcyan;
     font-size: larger;  
     font-family: 'Franklin Gothic Medium'; 
     
