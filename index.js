@@ -1,7 +1,12 @@
-const fetchCurrentWeather = async (url) => {
-    const response = await fetch(url);
-    currentWeather = await response.json();
-    return renderCurrentWeather(currentWeather);
+// const fetchCurrentWeather = async (url) => {
+//     const response = await fetch(url);
+//     currentWeather = await response.json();
+//     return renderCurrentWeather(currentWeather);
+// }
+function fetchCurrentWeather (url){
+    fetch(url)
+    .then(response=>response.json())
+    .then(data=> renderCurrentWeather(data));
 }
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".card").style = "margin-top:5%"
