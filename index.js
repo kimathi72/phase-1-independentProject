@@ -4,7 +4,14 @@
 //     return renderCurrentWeather(currentWeather);
 // }
 function fetchCurrentWeather (url){
-    fetch(url)
+    const configurationObject = {
+        method: "GET",
+        headers: {
+            "Content-Type" : "application/json",
+            Accept: "application/json",
+        }
+    }
+    fetch(url,configurationObject)
     .then(response=>response.json())
     .then(data=> renderCurrentWeather(data));
 }
