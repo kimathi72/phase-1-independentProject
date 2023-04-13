@@ -64,11 +64,13 @@ body{
     height:300px;
     width: 400px;
     align-self: center;
+    
 }
 #recommendations{
     display: flex;
     flex-direction: row;
     justify-content:center;
+    margin: 10px;
     padding: 5px;
     border-radius: 10px;
     color: lemonchiffon;
